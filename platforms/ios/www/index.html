@@ -32,14 +32,35 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>Hello World</title>
+        <!-- <link rel="stylesheet" type="text/css" href="css/index.css"> -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <title>Todo-List</title>
     </head>
     <body>
         <div class="app">
             <p>this is just a try</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control form-control-lg" id="todoData" placeholder="write something here...">
+                        <ul id="list" class="list-group">
+                            <li class="list-group-item">Avacado</li>
+                            <li class="list-group-item">Orange</li>
+                            <li class="list-group-item">Banana</li>
+                            <li class="list-group-item">Grapes</li>
+                            <li class="list-group-item">Huckleberry</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                        <button class="btn btn-primary btn-large" id="addItem">Add Items</button>
+                    </div>
+                </div>
+            </div>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
     </body>
 </html>
